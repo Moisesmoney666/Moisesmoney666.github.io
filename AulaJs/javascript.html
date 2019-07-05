@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<htmsl lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Javascript Word</title>
+    <style>
+     body{  
+         background-color: rgb(60, 255, 0);
+         color: crimson;
+     }  
+    
+    </style>
+</head>
+<body>
+    
+     <!-- Comnetario de uma linha -->
+     <!-- /* Comnetario de Multiplas linhas  
+             o Comando abaixo só é Visto no console
+             do navegador  -->
+     
+     
+    <script>
+        
+       console.log("Alo HA Mundo Javascript");
+       alert("Saudades do Sublime");
+    //    Garante que só sera exucado após carregar todos
+    // element HTML
+    
+       function perguntaDoLuis  (){
+          document.querySelector("h1").textContent = "JS é massa";  
+          var paçoca = document.querySelector("h1");
+            paçoca.innerHTML = "<em>JS</em> nao é Java!";
+            paçoca.style = "font-size: 50px;\
+                            color:deepSkyBlue;";//Saudades
+
+             //Variavel moderna local
+             let h1_2 = document.querySelector(".SegundoH1"); 
+             let h1_3 = document.querySelector("#TerceiroH1");  
+
+             h1_2.style = "font-size:10px";
+             h1_3.style ="text-shadow: 3px 3px 5px black ";
+
+             let h_uns = document.querySelectorAll("h1");
+
+             for(let i=0;  i < h_uns.length; i++ )
+             h_uns[i].style = "border: 2 px dashed white";
+
+             
+
+
+       }
+       window.onload = perguntaDoLuis;
+      //Js Variables
+      //https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables3
+var carName= "Volvo";
+ 
+
+
+
+    </script>
+    <h1> Iroduçao a Linguagem Javascript </h1>
+    <h1 class="segundoH1" >SegundoH1</h1>
+    <h1 class="TerceiroH1" >TerceiroH1</h1>
+
+<div style="text-align: center; background-color: white;border:4px red; "  >
+
+    <h2>Exemplo da Lampda</h2>
+    <button onclick="document.querySelector('#lampada').src = 'acesa.jpg'" >acesa</button>
+
+    <img src="apagar.jpg"id="lampada"
+                    onmouseover="acesa()" onmouseout="apagar()" >
+
+    <button onclick="document.querySelector('#lampada').src = 'apagar.jpg'" >Apagar</button>
+    </div>
+    <script>
+    var lampada = document.querySelector("#lampada");
+    function acesa(){lampada.src = "acesa.jpg"}
+    function apagar(){lampada.src = "apagar.jpg"}
+    
+    </script>
+</body>
+</html>
