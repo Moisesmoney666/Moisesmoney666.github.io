@@ -27,7 +27,7 @@ function verificaVencedor(){
 
 
 function vacaVencedora(){
-  vitoria.play();
+
   background("Crimson");
   textStyle(BOLD);
   textAlign(CENTER);
